@@ -4,9 +4,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <header>
+        <img src="image/contact_pic.JPG"/>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Reach Me</a></li>
+            </ul>
+        </nav>
+        <section>
+            <h1>Lets Connect</h1>
+            <blockquote>"Life is Either a daring or nothing at all"</blockquote>
+        </section>
+    </header>
+    <main>
+        <form action="contact.html" method="GET">
+            <section id="details">
+                <table>
+                    <thead>
+                        <th colspan="2"><h2>Your Details</h2></th>
+                   </thead>
+                    <tr>
+                        <td><label for="firstName">First Name* </label></td>
+                        <td><input id="firstName" name="firstName" type="text" minlength="3" maxlength="20" pattern="[a-zA-Z]+" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName">Last Name* </label></td>
+                        <td><input id="lastName" name="lastName" type="text" maxlength="15" pattern="[a-zA-Z ]+"required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="country">Country* </label></td>
+                        <td><input list="country-list" id="country" name="country" type="text" required>
+                        <datalist id="country-list">
+                            <option value="Australia"></option>
+                            <option value="New Zealand"></option>
+                            <option value="India"></option>
+                            <option value="Russia"></option>
+                            <option value="United States"></option>
+                            <option value="Bangkok"></option>
+                            <option value="Malaysia"></option>
+                        </datalist></td>
+                    </tr>
+                </table>
+            </section>
+            <section id="submit">
+                <span>How do you hear about me?  </span>
+                <input type="radio" id="website" name="surveyWebsite" value="website">
+                <label for="website">Website</label>
+                <input type="radio" id="facebook" name="surveyWebsite" value="facebook">
+                <label for="facebook">Facebook</label><br><br>
+                <label for="textMessage">Leave your comment here:</label><br>
+                <textarea id="textMessage" name="message" rows="4" cols="75">Write something....</textarea><br>
+                <br><br>
+                <input type="submit" value="Submit">
+            </section>
+        </form>
+    </main>
+    <footer>
+        <p>Copyright 2020.All rights reversed.Made with &#128151</p>
+    </footer>    
 </body>
 </html>

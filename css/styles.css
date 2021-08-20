@@ -56,6 +56,14 @@ table {
     width: 300px;
   }
 
+#details{
+    text-align: center;
+    margin: 20px auto;
+    display:inline-block;
+    vertical-align: top
+    padding: 0px 60px;
+  }
+
 footer p{
 display: block;
 color: #012980;
